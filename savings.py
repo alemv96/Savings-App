@@ -50,62 +50,35 @@ print(grocery_stores)
 # Scrape pricing data from grocery stores for specific items
 print("FLAG 7")
 #grocery_items = ["apples", "bread", "milk", "chocolate"]
-#print("FLAG 8")
 #grocery_data = {}
-#print("FLAG 9")
 #for store in grocery_stores:
- #  print("FLAG 10")
  #  grocery_data[store] = {}
- #  print("FLAG 11")
-#    for item in grocery_items:
-#        print("FLAG 12")
+ #   for item in grocery_items:
 #        #url = f"https://www.{store}.com/search?q={item}" #this URL is giving me an error. NEED TO FIX
-#       print(f"{store} and {item}")#Store is getting "Cedar Bluff" and that is why I am getting an error.
-#        print("FLAG 13")
+#        print(f"{store} and {item}")#Store is getting "Cedar Bluff" which is a location not a store. 
 #        response = requests.get(url)
-#        print("FLAG 14")
 #        if response.status_code == 200:
-#            print("FLAG 15")
 #            soup = BeautifulSoup(response.text, "html.parser")
-#            print("FLAG 16")
 #            if soup.find("span", class_="price") is not None:
-#                print("FLAG 17")
 #                price = soup.find("span", class_="price").text
-#                print("FLAG 18")
 #                grocery_data[store][item] = price
-#                print("FLAG 19")
 #            else:
 #                print(f"{item} not found at {store}")
 #        else:
-#            print("FLAG 20")
 #            print(f"Unable to retrieve data for {store} - {item}")
-#            print("FLAG 21")
-
+#
 # Find the best deals for each item
-#print("FLAG 22")
 #deals = {}
-#print("FLAG 23")
 #for item in grocery_items:
-#    print("FLAG 24")
 #    best_price = float("inf")
-#    print("FLAG 24")
 #    best_store = ""
-#    print("FLAG 25")
 #    for store, data in grocery_data.items():
-#        print("FLAG 26")
 #        if item in data and float(data[item]) < best_price:
-#            print("FLAG 27")
 #            best_price = float(data[item])
-#            print("FLAG 28")
 #            best_store = store
-#            print("FLAG 29")
 #    if best_store:
-#        print("FLAG 30")
 #        deals[item] = (best_store, best_price)
-#        print("FLAG 31")
 # Print out the best deals for each item
-#print("FLAG 32")
 #for item, (store, price) in deals.items():
-#    print("FLAG 33")
 #    print(f"The best deal for {item} is at {store} for ${price:.2f}")
-#    print("FLAG 34")
+#
