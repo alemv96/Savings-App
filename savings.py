@@ -48,31 +48,3 @@ for place in places_result['results']:
     # Print the name of the place
     print(place_details['result']['name'])
 
-#print(places_result)
-
-#to make sure it works we need to make sure the script is paused. 
-#time.sleep(3)
-
-#get the next 20 results.
-#places_result = map_client.places_nearby(page_token = places_result['next_page_token'])
-
-# Get the distance from the user.
-#distance = input('Enter the distance in meters : ')
-#
-# Find the user's location using the geolocator object
-#location = geolocator.geocode(f"{zipcode}, USA")
-
-# Get the latitude and longitude of the user's location
-#latitude = location.latitude
-#longitude = location.longitude
-
-# Specify what's the search query you would like to use:
-#search_query = 'Grocery Store'
-
-# Create a list of the businesses.
-#business_list = []
-
- 
-
-#I found the error in the main program. My API is not working properly. 
-# need to find a way to set it up correctly.
